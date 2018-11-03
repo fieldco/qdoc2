@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "cp -n .env.dist .env && npm i && rm -rf node_modules",
+    "start": "wait-for-it -t 30 $MONGO_HOST:$MONGO_PORT && node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.8",
+    "node-wait-for-it": "^0.2.0"
+  }
+}

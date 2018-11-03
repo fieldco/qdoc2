@@ -1,0 +1,13 @@
+{
+  "name": "qdoc2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "cd api && npm run bootstrap",
+    "start": "docker-compose up --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
